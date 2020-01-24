@@ -7,7 +7,7 @@
 body{
 	margin: 0;
 	color: #6d5384;
-	color: 13px/2.3 'roboto', sans-serif;
+	color: 300 13px/2.3 'Roboto', sans-serif;
 }
 
 img{
@@ -15,7 +15,7 @@ img{
 }
 
 a{
-	color: #6d5384;
+	color: #fff;
 	text-decoration: none;
 }
 
@@ -32,13 +32,55 @@ a:hover{
 	width: 1140px;
 	margin: 0 auto;
 }
-.top-section{
-	background: #69507f url(../image/bg-purple.png);
-	height: 400px;
-
-}
 
 .main-section{
 	background: #ddd1e8 url(../image/bg-board.png);
 	height: 400px;
 }
+.top-section{
+	background: #69507f url(../image/bg-purple.png);
+}
+
+.header{
+	overflow: hidden;
+}
+
+.logo{
+	float: left;
+}
+
+.nav{
+	float: right;
+
+}
+
+.nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav li{
+	float: left;
+	margin: 0 0 0 10px
+
+}
+.nav li a{
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #9884aa;
+	border-radius: 4px;
+	width: 140px;
+	padding: 15px 10px;
+	font: 900 18px/23px 'Montserrat', sans-serif;
+	display: block;
+	text-align: center;
+}
+
+.nav li a:hover{
+	background: #f7df59;
+	border-color: #f7df59;
+	box-shadow: 0 3px 0 0 #4c2f65;
+
+}
+
