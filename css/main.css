@@ -1,0 +1,44 @@
+*, 
+*:before, 
+*:after{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	color: #6d5384;
+	color: 13px/2.3 'roboto', sans-serif;
+}
+
+img{
+	border: 0;
+}
+
+a{
+	color: #6d5384;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.page{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.conteiner{
+	width: 1140px;
+	margin: 0 auto;
+}
+.top-section{
+	background: #69507f url(../image/bg-purple.png);
+	height: 400px;
+
+}
+
+.main-section{
+	background: #ddd1e8 url(../image/bg-board.png);
+	height: 400px;
+}
