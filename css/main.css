@@ -75,6 +75,25 @@ a:hover{
 	font: 900 18px/23px 'Montserrat', sans-serif;
 	display: block;
 	text-align: center;
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.nav li a:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 8px 8px 0 8px;
+	border-color: #f7df59 transparent transparent transparent;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	/*display: none;*/
+	/*visibility: hidden;*/
+	opacity: 0;
+	transition: all 0.3s ease 0.3s;
 }
 
 .nav li a:hover{
@@ -84,3 +103,22 @@ a:hover{
 
 }
 
+.nav li a:hover:after{
+	/*display: block;*/
+	/*visibility: visible;*/
+	top: 100%;
+	opacity: 1;
+}
+
+.box{
+	width: 200px;
+	height: 200px;
+	background: red;
+	transform-origin: 0 0;
+	transition: all 0.3s ease;
+}
+
+.box:hover{
+	background: green;
+	transform: translate(10px, 30px);
+}
