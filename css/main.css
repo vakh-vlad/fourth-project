@@ -7,7 +7,7 @@
 body{
 	margin: 0;
 	color: #6d5384;
-	color: 300 13px/2.3 'Roboto', sans-serif;
+	font: 300 13px/2.3 'Roboto', sans-serif;
 }
 
 img{
@@ -33,10 +33,7 @@ a:hover{
 	margin: 0 auto;
 }
 
-.main-section{
-	background: #ddd1e8 url(../image/bg-board.png);
-	height: 400px;
-}
+
 .top-section{
 	background: #69507f url(../image/bg-purple.png);
 }
@@ -110,15 +107,70 @@ a:hover{
 	opacity: 1;
 }
 
-.box{
-	width: 200px;
-	height: 200px;
-	background: red;
-	transform-origin: 0 0;
-	transition: all 0.3s ease;
+.main-section{
+	background: #ddd1e8 url(../image/bg-board.png);
+	height: 400px;
 }
 
-.box:hover{
-	background: green;
-	transform: translate(10px, 30px);
+.list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.list:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.list li{
+ 	float: left;
+ 	position: relative;
+ }
+
+ .list li a{
+ 	float: left;
+ 	padding: 10px;
+ 	border: 1px solid #cca;
+ 	width: 200px;
+ 	text-align: center;
+ }
+
+ .list ul{
+ 	position: absolute;
+ 	top: 100%;
+ 	left: 0;
+ 	padding: 0;
+ 	margin: 0;
+ 	list-style: none;
+ 	/*display: none;*/
+ 	opacity: 0;
+ 	visibility: hidden;
+ 	transition: opacity 1s ease;
+ 	background: #ddd1e8;
+ }
+
+ .list ul li{
+	float: none;
+ }
+
+ .list li li a{
+ 	float: none;
+ 	display: block;
+ 	
+ }
+ .list li:hover ul{
+ 	/*display: block;*/
+ 		opacity: 1;
+ 		visibility: visible;
+ }
+
+ .list li:hover a{
+ 	background: #ccf;
+ }
+
+ .list li:hover li a{
+ 	background: none;
+ }
+.list li li a:hover{
+	background: #ccf;
 }
