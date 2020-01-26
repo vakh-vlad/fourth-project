@@ -36,6 +36,7 @@ a:hover{
 
 .top-section{
 	background: #69507f url(../image/bg-purple.png);
+	height: 800px;
 }
 
 .header{
@@ -56,8 +57,15 @@ a:hover{
 	padding: 0;
 	list-style: none;
 }
+.nav ul:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
 .nav li{
 	float: left;
+	position: relative;
 	margin: 0 0 0 10px
 
 }
@@ -74,6 +82,7 @@ a:hover{
 	text-align: center;
 	position: relative;
 	transition: all 0.3s ease;
+	float: left;
 }
 
 .nav li a:after{
@@ -107,37 +116,10 @@ a:hover{
 	opacity: 1;
 }
 
-.main-section{
-	background: #ddd1e8 url(../image/bg-board.png);
-	height: 400px;
-}
-
-.list{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.list:after{
-	content: '';
-	display: block;
-	clear: both;
-}
-.list li{
- 	float: left;
- 	position: relative;
- }
-
- .list li a{
- 	float: left;
- 	padding: 10px;
- 	border: 1px solid #cca;
- 	width: 200px;
- 	text-align: center;
- }
-
- .list ul{
+.second-layer,
+.third-layer{						
  	position: absolute;
- 	top: 100%;
+ 	top: calc(100% + 8px);
  	left: 0;
  	padding: 0;
  	margin: 0;
@@ -146,31 +128,63 @@ a:hover{
  	opacity: 0;
  	visibility: hidden;
  	transition: opacity 1s ease;
- 	background: #ddd1e8;
+ 	background: #69507f url(../image/bg-purple.png);
+ }
+ .third-layer{
+ 	left: 100%;
+ 	top: 0;
  }
 
- .list ul li{
-	float: none;
+ .second-layer:after{
+ 	content: '';
+ 	display: block;
+ 	clear: both;
  }
 
- .list li li a{
+ .second-layer li,
+ .third-layer li{					
+	/*float: none;*/
+	float: left;
+	position: relative;
+ }
+
+.second-layer li a{
+	float: left;
+}
+
+
+ .nav li li a,
+ .nav li li li a{					
  	float: none;
  	display: block;
  	
  }
- .list li:hover ul{
+
+ .nav li:hover .second-layer,
+ .second-layer li:hover .third-layer{				
  	/*display: block;*/
  		opacity: 1;
  		visibility: visible;
  }
 
- .list li:hover a{
- 	background: #ccf;
+ .nav li:hover a{				
+ 	background: #f7df59;
  }
 
- .list li:hover li a{
+.nav li:hover  li a{			
  	background: none;
  }
-.list li li a:hover{
-	background: #ccf;
+
+.second-layer li:hover .second-a{				
+ 	background: #f7df59;
+ }
+
+.second-layer li li a:hover{
+	background: #f7df59;
 }
+
+.main-section{
+	background: #ddd1e8 url(../image/bg-board.png);
+	height: 400px;
+}
+
