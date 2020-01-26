@@ -36,7 +36,8 @@ a:hover{
 
 .top-section{
 	background: #69507f url(../image/bg-purple.png);
-	height: 800px;
+	color: #fff
+	
 }
 
 .header{
@@ -49,6 +50,9 @@ a:hover{
 
 .nav{
 	float: right;
+	z-index: 50;
+	position: 
+
 
 }
 
