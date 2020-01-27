@@ -8,6 +8,7 @@ body{
 	margin: 0;
 	color: #6d5384;
 	font: 300 13px/2.3 'Roboto', sans-serif;
+	background: #ddd1e8 url(../image/bg-board.png);
 }
 
 img{
@@ -288,12 +289,69 @@ a:hover{
 }
 
 
-
-
-
 .main-section{
-	background: #ddd1e8 url(../image/bg-board.png);
-	height: 400px;
+	padding: 60px 0;
+	color: #654d7b;
 }
 
+.section-header{
+	text-align: center;
 
+}
+
+.section-header h1{
+	font-size: 60px;
+	font-weight: 100;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+.section-header h2{
+	font-size: 30px;
+	color: #fff;
+	margin: 0;
+}
+
+.column-holder:after{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.column{
+	float: left;
+	position: relative;
+	background: #fff;
+	width: 340px;
+	margin:  0 0 0 60px;
+	padding: 20px;
+	border-radius: 4px;
+	box-shadow: 0 1px 1px rgba(0,0,0, 0.2);
+}
+
+.column-big{
+	margin: 0;
+	width: auto;
+	float: none;
+	text-align: center;
+}
+.column:before,
+.column:after{
+	content: "";
+	position: absolute;
+	height: 8px;
+	background: #fff;
+	bottom: 2px;
+	left: 0;
+	right: 0;
+	border-radius: 0 0 4px 4px;
+	box-shadow: 0 1px 1px rgba(0,0,0, 0.2);
+}
+
+.column:after{
+	bottom: 4px;
+}
+
+.column:first-child{
+	margin-left: 0;
+}
