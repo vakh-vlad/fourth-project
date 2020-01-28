@@ -335,6 +335,13 @@ a:hover{
 	float: none;
 	text-align: center;
 }
+.column-big strong{
+	font-weight: 500;
+}
+.column-big a{
+	color: #6d5384;
+	font-weight: 500;
+}
 .column:before,
 .column:after{
 	content: "";
@@ -354,4 +361,26 @@ a:hover{
 
 .column:first-child{
 	margin-left: 0;
+}
+
+.border-bottom{
+	width: auto;
+	padding: 0 0 40px;
+	margin: 0 0 35;
+	border-bottom: 2px solid #6d5384;
+}
+
+.footer{
+	width: 1140px;
+	margin: 0 auto 45px;
+	overflow: hidden;
+}
+
+.develop{
+	float: left
+}
+
+.develop-anchor{
+	float: right;
+	color: #6d5384;
 }
